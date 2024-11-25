@@ -13,7 +13,6 @@ export const poetOfTheMonthType = defineType({
     defineField({
         name: 'month',
         type: 'string',
-        validation: (rule) => rule.required(),
       }),
     defineField({
       name: 'slug',
