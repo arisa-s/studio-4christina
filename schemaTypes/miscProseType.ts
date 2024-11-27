@@ -50,7 +50,8 @@ export const miscProseType = defineType({
             type: 'file',
             title: 'PDF',
             options: {
-              accept: 'application/pdf'
+              accept: 'application/pdf',
+              hotspot: true
             }
           }
         ],
