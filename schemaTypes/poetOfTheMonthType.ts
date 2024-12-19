@@ -11,9 +11,9 @@ export const poetOfTheMonthType = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
-        name: 'month',
-        type: 'string',
-      }),
+      name: 'month',
+      type: 'string',
+    }),
     defineField({
       name: 'slug',
       type: 'slug',
@@ -31,18 +31,18 @@ export const poetOfTheMonthType = defineType({
       type: 'image',
     }),
     defineField({
-        name: "body",
-        type: "array",
-        title: "Body",
-        of: [
-          {
-            type: "block",
-          },
-          {
-            type: "image", // Optionally include images
-            options: { hotspot: true },
-          },
-        ],
-      },),
+      name: 'body',
+      type: 'array',
+      title: 'Body',
+      of: [
+        {
+          type: 'block',
+        },
+        {
+          type: 'image',
+          options: {hotspot: true},
+        },
+      ],
+    }),
   ],
 })

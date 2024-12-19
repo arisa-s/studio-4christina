@@ -35,26 +35,18 @@ export const miscProseType = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
-        name: "body",
-        type: "array",
-        title: "Body",
-        of: [
-          {
-            type: "block",
-          },
-          {
-            type: "image",
-            options: { hotspot: true },
-          },
-          {
-            type: 'file',
-            title: 'PDF',
-            options: {
-              accept: 'application/pdf',
-              hotspot: true
-            }
-          }
-        ],
-      },),
+      name: 'body',
+      type: 'array',
+      title: 'Body',
+      of: [
+        {
+          type: 'block',
+        },
+        {
+          type: 'image',
+          options: {hotspot: true},
+        },
+      ],
+    }),
   ],
 })
